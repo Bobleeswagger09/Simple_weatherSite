@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!---rel with sylesheet-->
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div id="container"> 
+        <div class="header">
+            <h1>WEATHER APP</h1>
+            <div>
+                <form action="" id="formTag">
+                    <input type="text" id="input" placeholder="Enter a city name" autofocus>
+                        <button type="button" onclick="resetButton()" id='search'>Search</button>
+
+                    </input>
+                </form>
+            </div>
+        </div>
+        <main class="main">
+            <div class="weather">
+                <h2 id="city"> Lagos, NG</h2> 
+                <div class="temp-box"> 
+                    <img src="image/weathericon.png" alt="image.png" id="img">
+                    <p id="temperature">26 °C</p>
+                </div>
+                <!--span tag is jsut likea div which is used to group similar elements together-->
+                <span id="clouds">Broken Clouds</span>
+            </div>
+    
+            <div class="divider1"></div>
+            <div class="forecastH">
+                <p class="cast-header">Upcoming forecast</p>
+                <div class="templist">
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30PM</p>
+                            <p> 29 °C / 25 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+    
+                        <div class="next">
+                            <div>
+                                <p class="time">8:30PM</p>
+                                <p> 29 °C / 25 °C</p>
+                            </div>
+                            <p class="desc">Light Rain</p>
+                        </div>
+    
+                        <div class="next">
+                            <div>
+                                <p class="time">8:30PM</p>
+                                <p> 29 °C / 25 °C</p>
+                            </div>
+                            <p class="desc">Light Rain</p>
+                        </div>
+    
+                        <div class="next">
+                            <div>
+                                <p class="time">8:30PM</p>
+                                <p> 29 °C / 25 °C</p>
+                            </div>
+                            <p class="desc">Light Rain</p>
+                        </div>
+    
+                        <div class="next">
+                            <div>
+                                <p class="time">8:30PM</p>
+                                <p> 29 °C / 25 °C</p>
+                            </div>
+                            <p class="desc">Light Rain</p>
+                        </div>
+    
+                        <div class="next">
+                            <div>
+                                <p class="time">8:30PM</p>
+                                <p> 29 °C / 25 °C</p>
+                            </div>
+                            <p class="desc">Light Rain</p>
+                        </div>
+                    
+    
+                </div>
+            </div> 
+        </main>
+        <div class="forecstD">
+            <div class="divider2"></div>
+            <p class="cast-header">Next 4 Days Forcast</p>
+    
+            <div class="weekF">
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 20222</p>
+                    <p>29 °C / 25 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+                    
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 20222</p>
+                    <p>29 °C / 25 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 20222</p>
+                    <p>29 °C / 25 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 20222</p>
+                    <p>29 °C / 25 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
